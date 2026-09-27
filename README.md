@@ -16,7 +16,7 @@ Expected address after publishing: https://houawanych-pixel.github.io/hova-matri
 
 16 pages, project branches, early beta launch links, themed world sections, horizontal galleries, image enlargement, shop category filters and a local permission-request draft.
 
-Chronicle Clash Link and MG launch at their existing game URLs. MG is also featured under HOVAGI. Concept artwork is not current gameplay footage.
+Evertrail and MG launch at their existing game URLs. MG is also featured under HOVAGI. Concept artwork is not current gameplay footage.
 
 EchoVision and I Odin show only their names and under-construction status. Private planning documents and PRDs are not included.
 
