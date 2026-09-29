@@ -1,1 +1,183 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chronicle Clash | Hova Matrix</title><meta name="description" content="Explore the worlds, games and creative projects of Hova Matrix."><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23101113'/%3E%3Cpath d='M8 6v20M24 6v20M8 16h16' stroke='%23d4b478' stroke-width='4'/%3E%3C/svg%3E"><link rel="stylesheet" href="../style.css"><script src="../app.js" defer></script></head><body><a class="skip" href="#main">Skip to content</a><header><nav class="nav wrap" aria-label="Main"><a class="brand" href="../index.html">HOVA <span>MATRIX</span></a><button class="menu" aria-label="Menu" aria-expanded="false" aria-controls="navlinks">☰</button><div class="navlinks" id="navlinks"><a href="../index.html#worlds">Worlds</a><a href="../watch-listen/index.html">Watch & listen</a><a href="../shop/index.html">Shop</a><a href="../support/index.html">Support</a></div><a class="playnav" href="../index.html#play">Play the betas ↗</a></nav></header><main id="main"><section class="subhero " style="background-image:linear-gradient(90deg,#101113ef,#10111340),url(../assets/chronicle.webp);background-size:cover;background-position:center"><div class="wrap"><span class="eyebrow">Fantasy · digital & tabletop</span><h1>CHRONICLE CLASH</h1><p class="lead">One world. More than one way to adventure.</p></div></section><section class="pagebody wrap"><div id="betas" class="beta-grid"><article class="beta"><div class="art"><img src="../assets/chronicle.webp" alt="Evertrail concept artwork" loading="lazy" width="1536" height="1024"></div><div class="copy"><span class="status">Early beta · ready to play</span><h3>Evertrail</h3><p>Evertrail · early action-RPG beta.</p><a class="button" href="https://houawanych-pixel.github.io/castle-rpg-testbed/">Play early beta <span aria-hidden="true">↗</span></a><p class="fine">Artwork shows the intended world. The beta is an early prototype.</p></div></article><article class="beta"><div class="art"><img src="../assets/hovagi.webp" alt="Chronicle Clash MG concept artwork" loading="lazy" width="1536" height="1024"></div><div class="copy"><span class="status">Early beta · ready to play</span><h3>Chronicle Clash MG</h3><p>The shared 3D testbed also featured in HOVAGI.</p><a class="button" href="https://houawanych-pixel.github.io/chronicle-clash-mg3d/">Play early beta <span aria-hidden="true">↗</span></a><p class="fine">Artwork shows the intended world. The beta is an early prototype.</p></div></article></div><div class="box" id="binder"><span class="eyebrow">Tabletop / under construction</span><h2>Chronicle Clash Binder</h2><p>The binder board game brings another way to explore Chronicle Clash. Rules, components and release information will be shared as development progresses.</p></div><div class="rail-shell"><div class="rail" tabindex="0" aria-label="Project gallery"><figure class="gallery-item" data-category="art"><button data-image="../assets/chronicle.webp" data-caption="Chronicle Clash · Fantasy environment" aria-label="Enlarge Chronicle Clash · Fantasy environment"><img src="../assets/chronicle.webp" alt="Chronicle Clash · Fantasy environment" loading="lazy" width="1536" height="1024"></button><figcaption>Chronicle Clash · Fantasy environment<span>Concept art</span></figcaption></figure></div><div class="rail-controls"><button data-scroll="-1" aria-label="Previous gallery items">←</button><button data-scroll="1" aria-label="Next gallery items">→</button></div></div></section></main><footer class="footer wrap"><div class="footer-top"><div><a class="brand" href="../index.html">HOVA MATRIX</a><p>Games. Stories. Worlds in the making.</p></div><div class="footer-links"><a href="../about/index.html">About us</a><a href="../community/index.html">Follow the worlds</a><a href="../permissions/index.html">Request permission</a><a href="../support/index.html">Support the projects</a></div></div><div class="footer-bottom"><span>Hova Matrix · Independent worlds, under construction.</span><span>Concept artwork is not gameplay.</span></div></footer><dialog id="art-dialog"><div class="dialogbar"><span id="image-caption"></span><button class="close" aria-label="Close image">×</button></div><img alt=""></dialog></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chronicle Clash | Hova Matrix</title>
+<meta name="description" content="Chronicle Clash — an anime-fantasy world of six continents. Explore the world map, regions, locations and first-person panoramas.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23101113'/%3E%3Cpath d='M8 6v20M24 6v20M8 16h16' stroke='%23d4b478' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="img/area/crownfen-keep.webp">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="cc.css">
+<script src="../app.js" defer></script>
+<script src="world-data.js" defer></script>
+<script src="cc.js" defer></script>
+</head>
+<body class="cc">
+<a class="skip" href="#main">Skip to content</a>
+<header><nav class="nav wrap" aria-label="Main"><a class="brand" href="../index.html">HOVA <span>MATRIX</span></a><button class="menu" aria-label="Menu" aria-expanded="false" aria-controls="navlinks">☰</button><div class="navlinks" id="navlinks"><a href="../index.html#worlds">Worlds</a><a href="../watch-listen/index.html">Watch & listen</a><a href="../shop/index.html">Shop</a><a href="../support/index.html">Support</a></div><a class="playnav" href="../index.html#play">Play the betas ↗</a></nav></header>
+
+<main id="main">
+
+<!-- 1 · Parallax hero -->
+<section class="cc-hero" aria-label="Chronicle Clash">
+  <div class="cc-layer sky" data-speed="0.25" data-drift="1" style="background-image:url(img/area/crownfen-keep.webp)"></div>
+  <div class="cc-layer map" data-speed="0.5" data-rotate="1" style="background-image:url(img/world/world.webp)"></div>
+  <div class="cc-layer mist" data-speed="0.75"></div>
+  <div class="cc-layer dust" data-speed="1.15"></div>
+  <div class="cc-hero-copy" data-speed="-0.35" data-fade="1">
+    <span class="eyebrow">Hova Matrix · World 01 · Fantasy</span>
+    <h1><span class="word"><span>CHRONICLE</span></span> <span class="word"><span>CLASH</span></span></h1>
+    <p class="lead">An anime-fantasy open world you explore map by map — from six continents down to a single room, and six choices inside it.</p>
+    <div class="buttons">
+      <a class="button" href="#world">Explore the world</a>
+      <a class="button secondary" href="#area">Step into an Area</a>
+    </div>
+  </div>
+  <a class="cc-scroll" href="#world">Scroll<i></i></a>
+</section>
+
+<!-- 2 · Six continents (sticky world map) -->
+<section class="cc-section" id="world">
+  <div class="wrap">
+    <div class="cc-head" data-reveal>
+      <span class="eyebrow">The world</span>
+      <h2>Six continents.<br>One map to read them all.</h2>
+      <span class="cc-rule"></span>
+      <p>Every journey starts on the world map. Each coloured point is a region, and its colour is its threat — how dangerous the road ahead will be.</p>
+    </div>
+    <div class="cc-worlds">
+      <div class="cc-steps" id="continent-steps">
+        <article class="cc-step active" data-cont="all">
+          <span class="num">THE WORLD</span>
+          <h3>Twenty-four regions</h3>
+          <p>Frostcrown Isles in the north, Vharos to the west, Myrath at the centre, Elindor to the east, Solvara and the Siri Isles to the south. Scroll to travel across them.</p>
+          <div class="cc-legend" id="tier-legend"></div>
+        </article>
+        <!-- continent steps are added by cc.js from world-data.js -->
+      </div>
+      <div class="cc-mapstick">
+        <div class="cc-mapframe" id="world-frame">
+          <div class="cc-mapinner" id="world-inner">
+            <img src="img/world/world.webp" alt="The world map of Chronicle Clash with six continents" width="1448" height="1086" loading="lazy">
+          </div>
+          <span class="cc-maplabel" id="world-label">THE WORLD</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · Zoom-through: World → Objective -->
+<section class="cc-zoom" id="journey" aria-label="From the world down to a single Objective">
+  <div class="cc-zoomstage">
+    <div class="cc-crumbs" id="z-crumbs"><span>World</span><span>Continent</span><span>Region</span><span>Location</span><span>Area</span><span>Objective</span></div>
+    <div class="cc-zlayer" data-fx="72" data-fy="35"><img src="img/world/world.webp" alt="World map" loading="lazy"></div>
+    <div class="cc-zlayer" data-fx="22" data-fy="28"><img src="img/region/elindor.webp" alt="Elindor continent map" loading="lazy"></div>
+    <div class="cc-zlayer" data-fx="50" data-fy="60"><img src="img/region/mistfen.webp" alt="Mistfen region map" loading="lazy"></div>
+    <div class="cc-zlayer" data-fx="51.7" data-fy="20"><img src="img/location/crownfen-marsh.webp" alt="Crownfen Marsh location map" loading="lazy"></div>
+    <div class="cc-zlayer pano" data-fx="21.7" data-fy="28"><img src="img/area/crownfen-keep.webp" alt="Crownfen Keep panorama" loading="lazy"></div>
+    <div class="cc-zlayer" data-fx="50" data-fy="50"><img src="img/area/crownfen-keep-o1.webp" alt="Objective: Village Chief" loading="lazy" style="width:min(70vw,420px)"></div>
+    <div class="cc-zcap" id="z-cap" aria-live="polite">
+      <span class="lvl">WORLD</span><h3>The whole world</h3><p>Six continents and the regions between them.</p>
+    </div>
+    <div class="cc-zbar" id="z-bar" aria-hidden="true"><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i><i><b></b></i></div>
+  </div>
+</section>
+
+<!-- 4 · Nine nations -->
+<section class="cc-section" id="nations">
+  <div class="wrap">
+    <div class="cc-head" data-reveal>
+      <span class="eyebrow">Nine nations</span>
+      <h2>Every banner has a colour.</h2>
+      <span class="cc-rule"></span>
+      <p>Nine nations hold the six continents. Their colours are subtle signs of allegiance — a sash, a sigil — never a costume that erases who a character is.</p>
+    </div>
+    <div class="cc-nations" id="nation-grid"></div>
+    <p class="cc-gray" data-reveal>Land outside the nine is a <b style="color:#cfc9bd">Gray Zone</b> — unclaimed, contested or infested territory, and usually the most dangerous ground on the map.</p>
+  </div>
+</section>
+
+<!-- 5 · Panorama -->
+<section class="cc-section cc-area" id="area">
+  <div class="wrap">
+    <div class="cc-head" data-reveal>
+      <span class="eyebrow">Crownfen Marsh · Mistfen · Elindor</span>
+      <h2>Step into an Area.</h2>
+      <span class="cc-rule"></span>
+      <p>Every Area is a first-person panorama that loops all the way around, with exactly six numbered Objectives: people to meet, puzzles to solve, roads to take. Drag to look around.</p>
+    </div>
+    <div class="cc-areatabs" id="area-tabs" role="group" aria-label="Choose an Area"></div>
+    <div class="pano" id="pano-main" data-reveal="zoom"></div>
+    <div class="objectives" id="objectives"></div>
+    <p class="cc-note">Crownfen Marsh has eight Areas; the first six are shown here. Panoramas are painted concept art for the binder game.</p>
+  </div>
+</section>
+
+<!-- 6 · Region gallery / atlas -->
+<section class="cc-section" id="atlas">
+  <div class="wrap">
+    <div class="cc-head" data-reveal>
+      <span class="eyebrow">The atlas</span>
+      <h2>Open any map.</h2>
+      <span class="cc-rule"></span>
+      <p>Every region has its own painted map. Elindor goes deeper still — open a region, pick a numbered location, and walk right into it.</p>
+      <div class="buttons"><button class="button" data-atlas="world">Open the full atlas</button></div>
+    </div>
+    <div class="cc-gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- 7 · Story band -->
+<section class="cc-story" id="story">
+  <div class="cc-layer sky" data-speed="0.3" style="background-image:url(img/area/shroudbell-cathedral.webp)"></div>
+  <div class="cc-layer mist" data-speed="0.6"></div>
+  <div class="wrap" data-reveal>
+    <span class="eyebrow">Where the story begins</span>
+    <blockquote>The Grand Festival begins as a celebration of peace.</blockquote>
+    <ol>
+      <li><b>I</b>Elindor gathers for the Grand Festival.</li>
+      <li><b>II</b>A dormant Guardian awakens through Princess Elyza's innate power.</li>
+      <li><b>III</b>The sky turns red. Titans stir, and the festival collapses into crisis.</li>
+      <li><b>IV</b>Lance stays silent as the story widens from one kingdom into celestial and multidimensional arcs.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 8 · Play -->
+<section class="cc-section" id="play">
+  <div class="wrap">
+    <div class="cc-head" data-reveal>
+      <span class="eyebrow">Ways to play</span>
+      <h2>One world. More than one way in.</h2>
+      <span class="cc-rule"></span>
+    </div>
+    <div class="beta-grid" style="margin-top:36px" data-reveal>
+      <article class="beta"><div class="art"><img src="../assets/chronicle.webp" alt="Evertrail concept artwork" loading="lazy" width="1536" height="1024"></div><div class="copy"><span class="status">Early beta · ready to play</span><h3>Evertrail</h3><p>Evertrail · early action-RPG beta.</p><a class="button" href="https://houawanych-pixel.github.io/castle-rpg-testbed/">Play early beta <span aria-hidden="true">↗</span></a><p class="fine">Artwork shows the intended world. The beta is an early prototype.</p></div></article>
+      <article class="beta"><div class="art"><img src="../assets/hovagi.webp" alt="Chronicle Clash MG concept artwork" loading="lazy" width="1536" height="1024"></div><div class="copy"><span class="status">Early beta · ready to play</span><h3>Chronicle Clash MG</h3><p>The shared 3D testbed also featured in HOVAGI.</p><a class="button" href="https://houawanych-pixel.github.io/chronicle-clash-mg3d/">Play early beta <span aria-hidden="true">↗</span></a><p class="fine">Artwork shows the intended world. The beta is an early prototype.</p></div></article>
+    </div>
+    <div class="box" id="binder" style="margin-top:20px" data-reveal><span class="eyebrow">Tabletop / under construction</span><h2>Chronicle Clash Binder</h2><p>The binder game is the heart of Chronicle Clash: printed maps you travel across, first-person Areas you step into, and six Objectives in every one. Rules, components and release information will be shared as development progresses.</p></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer wrap"><div class="footer-top"><div><a class="brand" href="../index.html">HOVA MATRIX</a><p>Games. Stories. Worlds in the making.</p></div><div class="footer-links"><a href="../about/index.html">About us</a><a href="../community/index.html">Follow the worlds</a><a href="../permissions/index.html">Request permission</a><a href="../support/index.html">Support the projects</a></div></div><div class="footer-bottom"><span>Hova Matrix · Independent worlds, under construction.</span><span>Concept artwork is not gameplay.</span></div></footer>
+
+<!-- Atlas explorer -->
+<dialog class="atlas" id="atlas-dialog" aria-label="Chronicle Clash atlas">
+  <div class="atlas-stage" id="atlas-stage"><div class="atlas-map" id="atlas-map"><img id="atlas-img" alt=""></div></div>
+  <div class="atlas-top">
+    <nav class="atlas-crumbs" id="atlas-crumbs" aria-label="Where you are"></nav>
+    <span class="sp"></span>
+    <button class="iconbtn" id="atlas-list-btn" aria-label="Show list" aria-expanded="false">☰</button>
+    <button class="iconbtn" id="atlas-close" aria-label="Close atlas">×</button>
+  </div>
+  <aside class="atlas-side" id="atlas-side" aria-label="Places on this map"><header><h3 id="side-title"></h3><p id="side-sub"></p></header><div class="atlas-list" id="atlas-list"></div></aside>
+  <div class="atlas-bottom"><button class="iconbtn" id="zoom-in" aria-label="Zoom in">+</button><button class="iconbtn" id="zoom-out" aria-label="Zoom out">−</button><button class="iconbtn" id="zoom-fit" aria-label="Fit map">⤢</button></div>
+  <div class="atlas-pano" id="atlas-pano" hidden></div>
+  <div class="atlas-toast" id="atlas-toast" role="status"></div>
+</dialog>
+</body>
+</html>
