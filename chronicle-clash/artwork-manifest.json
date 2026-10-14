@@ -1,0 +1,33 @@
+{
+  "project": "Chronicle Clash",
+  "source_folder": "https://drive.google.com/drive/folders/1KQ4ElFy8VUOwFgrN6WVcUjg5DdJgTJ0g",
+  "note": "Source images remain in Google Drive. Copy approved, web-optimized assets to this repository before using <img> on public website. Google Drive private image links are NOT a public image CDN.",
+  "cards": [
+    "Rin",
+    "Nyxara",
+    "Obsidian Dreadknight",
+    "Divide",
+    "Malevorax",
+    "Soularus",
+    "Elite Vanguard",
+    "Reinforcement Nobles",
+    "Seraphine",
+    "Aerion",
+    "Morwenna",
+    "Kitsune-9"
+  ],
+  "characters": [
+    "Azure Bishop",
+    "Lysara",
+    "Lance",
+    "Elyza"
+  ],
+  "uncategorized_character_images": 3,
+  "website_sections": [
+    "Featured Chronicle Clash hero",
+    "Card showcase",
+    "Characters gallery",
+    "World atlas",
+    "Start game buttons"
+  ]
+}
