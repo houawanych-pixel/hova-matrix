@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0e17">
+<meta name="description" content="Choose a playable Hova Matrix game demo. Mobile-friendly early beta game launcher.">
+<title>Start Playing | Hova Matrix</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;--gold:#eacb90;--bg:#090c14;--muted:#b9c0d0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#28314a 0%,var(--bg) 60%);color:#fff;min-height:100svh}a{color:inherit;text-decoration:none}
+.skip{position:absolute;left:-999px;top:12px;z-index:100;background:white;color:black;padding:12px}.skip:focus{left:12px}
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:16px;background:#090c14e8;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff20;padding:15px clamp(18px,5vw,68px)}
+.brand{font-weight:850;letter-spacing:.13em;font-size:clamp(15px,3vw,20px)}.brand span{color:var(--gold)}
+.back{border:1px solid #ffffff4d;border-radius:999px;padding:10px 15px;font-size:13px;font-weight:700}
+.back:focus-visible,.launch:focus-visible,.card:focus-within{outline:3px solid #fff;outline-offset:3px}
+main{max-width:1450px;margin:0 auto;padding:clamp(35px,7vw,80px) clamp(18px,5vw,68px) 80px}
+.kicker{color:var(--gold);text-transform:uppercase;font-size:12px;font-weight:800;letter-spacing:.28em;margin:0 0 15px}
+h1{font-size:clamp(45px,10vw,110px);line-height:.94;letter-spacing:-.055em;margin:0;max-width:1000px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--gold)}.intro{max-width:610px;color:var(--muted);font-size:clamp(16px,2vw,19px);line-height:1.6;margin:20px 0 42px}
+.games{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2.3vw,30px)}
+.card{background:#141a29;border:1px solid #ffffff28;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:#eacb9088}
+.art{position:relative;aspect-ratio:16/9;overflow:hidden;background:#242d42}
+.art img{width:100%;height:100%;object-fit:cover;display:block}.art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#141a29 0%,transparent 65%);pointer-events:none}
+.tag{position:absolute;z-index:1;left:18px;top:17px;background:#050a14dc;border:1px solid #ffffff44;border-radius:999px;padding:7px 12px;font-size:12px;letter-spacing:.07em}
+.content{padding:0 clamp(17px,3vw,28px) 26px;display:flex;flex:1;flex-direction:column}
+h2{font-size:clamp(26px,3.5vw,43px);letter-spacing:-.03em;line-height:1.04;margin:10px 0 10px}
+.description{font-size:15px;color:var(--muted);line-height:1.5;margin:0 0 22px;flex:1}
+.launch{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;background:var(--gold);border-radius:12px;color:#101014;font-size:16px;font-weight:850}
+.note{font-size:12px;color:#a7afc0;margin:13px 0 0;line-height:1.5}
+.bottom{margin:46px 0 0;color:var(--muted);font-size:13px;line-height:1.6}
+@media(max-width:680px){.top{padding:13px 18px}.back{padding:11px 12px}.games{grid-template-columns:1fr}.intro{margin-bottom:28px}.content{padding:0 18px 20px}.tag{left:13px;top:13px}.card{border-radius:16px}main{padding-top:36px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
+</style>
+</head><body><a class="skip" href="#games">Skip to games</a>
+<header class="top"><a class="brand" href="../index.html" aria-label="Hova Matrix home">HOVA <span>MATRIX</span></a><a class="back" href="../index.html">← Back to worlds</a></header>
+<main><p class="kicker">The playable worlds</p><h1>Choose your <em>adventure.</em></h1>
+<p class="intro">Explore our early browser game demos. Pick a world below and hit Start Game. Some features are still being built.</p>
+<section id="games" class="games" aria-label="Available game demos">
+<article class="card"><div class="art"><img src="../assets/chronicle.webp" alt="Evertrail fantasy world concept art" loading="eager"><span class="tag">01 · Fantasy RPG</span></div><div class="content"><h2>Evertrail</h2><p class="description">Step into an early fantasy adventure from the Chronicle Clash universe.</p><a class="launch" href="https://houawanych-pixel.github.io/castle-rpg-testbed/" aria-label="Start Evertrail early beta">▶ Start Game <span aria-hidden="true">↗</span></a><p class="note">Early beta · Concept art represents the intended world</p></div></article>
+<article class="card"><div class="art"><img src="../assets/hovagi-core.webp" alt="HOVAGI tactical facility concept art" loading="lazy"><span class="tag">02 · Tactical stealth</span></div><div class="content"><h2>HOVAGI Stage 01</h2><p class="description">Enter the first mission in the six-stage tactical demo.</p><a class="launch" href="https://houawanych-pixel.github.io/hovagi-six-stage-demo/" aria-label="Start HOVAGI Stage 01 demo">▶ Start Game <span aria-hidden="true">↗</span></a><p class="note">Early beta · Prototype gameplay</p></div></article>
+<article class="card"><div class="art"><img src="../assets/hovagi.webp" alt="Chronicle Clash MG tactical concept art" loading="lazy"><span class="tag">03 · 3D testbed</span></div><div class="content"><h2>Chronicle Clash MG</h2><p class="description">Try the tactical 3D prototype, also featured in HOVAGI.</p><a class="launch" href="https://houawanych-pixel.github.io/chronicle-clash-mg3d/" aria-label="Start Chronicle Clash MG beta">▶ Start Game <span aria-hidden="true">↗</span></a><p class="note">Early beta · Shared prototype</p></div></article>
+<article class="card"><div class="art"><img src="../assets/homelancer-beta.webp" alt="Homelancer space game concept art" loading="lazy"><span class="tag">04 · Space adventure</span></div><div class="content"><h2>Homelancer Digital</h2><p class="description">Fly, transform into a mech and explore a growing space frontier.</p><a class="launch" href="https://houawanych-pixel.github.io/homelancer-digital/" aria-label="Start Homelancer Digital test beta">▶ Start Game <span aria-hidden="true">↗</span></a><p class="note">Test beta · Best played on a phone in landscape orientation</p></div></article>
+</section><p class="bottom">Artwork is concept art, not screenshots of current gameplay. Games are works in progress. For updates and other projects, <a href="../index.html" style="color:var(--gold);text-decoration:underline">explore Hova Matrix</a>.</p>
+</main></body></html>
